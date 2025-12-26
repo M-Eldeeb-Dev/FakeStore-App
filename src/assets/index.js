@@ -1,0 +1,1 @@
+export {default as mainImage} from './store.webp'

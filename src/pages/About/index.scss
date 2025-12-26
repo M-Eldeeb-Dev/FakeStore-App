@@ -1,0 +1,149 @@
+$color-dark: #020617;
+$color-indigo: #6366f1;
+$color-card: #0f172a;
+$white: #ffffff;
+
+.about-page {
+  min-height: 70vh;
+  background: linear-gradient(180deg, #0b1220, #070b14);
+  color: $white;
+
+  .about-hero {
+    padding-top: 2rem;
+
+    h1 {
+      font-weight: 700;
+      color: $white;
+    }
+
+    .lead {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1.2rem;
+    }
+  }
+
+  .feature-card {
+    background: $color-card;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-icon {
+      color: $color-indigo;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    h5 {
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: $white;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+      margin: 0;
+    }
+  }
+
+  .about-content {
+    .content-card {
+      background: $color-card;
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+      h3 {
+        color: $color-indigo;
+        font-weight: 600;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.8;
+        margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // Responsive Media Queries
+  @media (max-width: 768px) {
+    .about-hero {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .lead {
+        font-size: 1rem;
+      }
+    }
+
+    .feature-card {
+      padding: 1.5rem;
+
+      .feature-icon {
+        font-size: 2.5rem;
+      }
+    }
+
+    .about-content .content-card {
+      padding: 2rem;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .about-hero {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .lead {
+        font-size: 0.95rem;
+      }
+    }
+
+    .feature-card {
+      padding: 1.25rem;
+
+      .feature-icon {
+        font-size: 2rem;
+      }
+
+      h5 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+      }
+    }
+
+    .about-content .content-card {
+      padding: 1.5rem;
+
+      h3 {
+        font-size: 1.25rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
