@@ -31,21 +31,21 @@ function ProductDetails() {
     <>
       <Helmet>
         <title>
-          {product?.title
+          {product.title
             ? `${product.title} - Fake Store`
             : "Product Details - Fake Store"}
         </title>
         <meta
           name="description"
           content={
-            product?.description ||
+            product.description ||
             "View detailed information about this product at Fake Store."
           }
         />
         <meta
           name="keywords"
-          content={`${product?.category || "product"}, ${
-            product?.title || "shopping"
+          content={`${product.category || "product"}, ${
+            product.title || "shopping"
           }, online store`}
         />
       </Helmet>

@@ -17,7 +17,6 @@
     "react-detect-offline": "^2.4.5",
     "react-dom": "^19.2.0",
     "react-helmet": "^6.1.0",
-    "react-helmet-async": "^2.0.5",
     "react-router-dom": "^7.11.0",
     "react-spinner": "^0.2.7",
     "react-spinners": "^0.17.0",
