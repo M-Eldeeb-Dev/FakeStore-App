@@ -100,20 +100,24 @@ function Contact() {
                 <form onSubmit={sendFormPopUp}>
                   <div className="row g-3">
                     <div className="col-md-6">
-                      <label className="form-label">Your Name</label>
+                      <label htmlFor="name" className="form-label">Your Name</label>
                       <input
                         type="text"
                         className="form-control custom-input"
                         placeholder="John Doe"
+                        name="name"
+                        id="name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         required
                       />
                     </div>
                     <div className="col-md-6">
-                      <label className="form-label">Your Email</label>
+                      <label htmlFor="email"  className="form-label">Your Email</label>
                       <input
                         type="email"
+                        name="email"
+                        id="email"
                         className="form-control custom-input"
                         placeholder="john@example.com"
                         value={email}
@@ -122,9 +126,11 @@ function Contact() {
                       />
                     </div>
                     <div className="col-12">
-                      <label className="form-label">Subject</label>
+                      <label htmlFor="subject"  className="form-label">Subject</label>
                       <input
                         type="text"
+                        name="subject"
+                        id="subject"
                         className="form-control custom-input"
                         placeholder="How can we help?"
                         value={subject}
@@ -133,10 +139,12 @@ function Contact() {
                       />
                     </div>
                     <div className="col-12">
-                      <label className="form-label">Message</label>
+                      <label htmlFor="message"  className="form-label">Message</label>
                       <textarea
                         className="form-control custom-input"
                         rows="5"
+                        name="message"
+                        id="message"
                         placeholder="Your message here..."
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
