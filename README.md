@@ -2,6 +2,8 @@
 
 A modern e-commerce application built with React and Vite, featuring a responsive design and seamless user experience.
 
+<img width="1907" height="824" alt="image" src="https://github.com/user-attachments/assets/2862b228-2f8a-48e8-995d-6a29c2d8f22b" />
+
 ## 🚀 Features
 
 - **Product Browsing:** View a comprehensive list of products.
