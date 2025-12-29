@@ -59,7 +59,7 @@ function Products() {
                 <div className="col-12 col-sm-6 col-lg-4" key={product.id}>
                   <div className="product-card">
                     <div className="product-image">
-                      <img src={product.image} alt={product.title} />
+                      <img src={product.image} loading="lazy" alt={product.title} />
                     </div>
 
                     <div className="product-body">
