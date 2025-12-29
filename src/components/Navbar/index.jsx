@@ -22,7 +22,7 @@ function Navbar({path, cart}) {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="collapsibleNavId">
-            <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
+            <ul className="navbar-nav ms-auto text-center mt-2 mt-lg-0">
               <li className="nav-item">
                 <Link className={`nav-link ${path === 'Home' && 'active'}`} to={'/'} aria-current="page">
                   Home
@@ -39,7 +39,7 @@ function Navbar({path, cart}) {
               </li>
             </ul>
             {path === 'Products' &&
-              <div className="form px-5 d-flex align-items-center gap-3">
+              <div className="form text-center px-5 d-flex align-items-center gap-3">
                 <form className="d-flex my-2 my-lg-0" onSubmit={(e) => e.preventDefault()}>
                   <input
                     className="form-control me-sm-2"
