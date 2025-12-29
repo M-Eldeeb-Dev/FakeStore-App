@@ -107,6 +107,7 @@ function Contact() {
                         placeholder="John Doe"
                         name="name"
                         id="name"
+                        autocomplete="given-name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         required
@@ -118,6 +119,7 @@ function Contact() {
                         type="email"
                         name="email"
                         id="email"
+                        autocomplete="off"
                         className="form-control custom-input"
                         placeholder="john@example.com"
                         value={email}
@@ -131,6 +133,7 @@ function Contact() {
                         type="text"
                         name="subject"
                         id="subject"
+                        autocomplete="off"
                         className="form-control custom-input"
                         placeholder="How can we help?"
                         value={subject}
@@ -145,6 +148,7 @@ function Contact() {
                         rows="5"
                         name="message"
                         id="message"
+                        autocomplete="off"
                         placeholder="Your message here..."
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
