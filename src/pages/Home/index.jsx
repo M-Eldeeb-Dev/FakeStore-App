@@ -24,7 +24,7 @@ function Home() {
       <Navbar path={routePath} />
 
       <header className="hero-section">
-        <img src={mainImage} alt="Store Hero" className="hero-img" />
+        <img src={mainImage} loading="lazy" alt="Store Hero" className="hero-img" />
 
         <div className="hero-overlay">
           <div className="hero-content">
