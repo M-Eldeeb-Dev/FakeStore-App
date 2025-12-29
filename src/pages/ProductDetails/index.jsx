@@ -75,7 +75,7 @@ function ProductDetails() {
               <div className="col-lg-5">
                 <div className="product-image-card">
                   <div className="image-placeholder">
-                    <img src={product.image} alt={product.title} />
+                    <img src={product.image} loading="lazy" alt={product.title} />
                   </div>
                 </div>
               </div>
